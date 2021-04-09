@@ -1,0 +1,283 @@
+*{
+	padding: 0;
+	font-family: 'Oswald', sans-serif;
+}
+
+.border{
+	border: #000 3px solid;
+}
+
+/* Navbar*/
+
+nav{
+    margin-bottom: 5px;
+}
+
+.navbar{
+	background-color: #ADD8E6;
+}
+
+.nav-a{
+	font-size: 14px;
+}
+
+.navbar-dark{
+    background-color: #323232;
+    color: #fff;
+}
+
+.visible {
+    display: inline-block;
+}
+.invisible {
+    display: none;
+}
+
+.a-dark{
+	color: darkgray;
+}
+
+.a-dark:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+
+.button-dark{
+	color: #fff;
+	border-color: #fff;
+}
+
+.button-dark:hover{
+	background-color: rgb(51, 197, 73);
+	border-color: transparent;
+}
+
+.icon-mode{
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+
+/* Navbar */
+
+
+/* Body */
+
+.body-dark{
+    background-color: #212121;
+    color: #fff;
+}
+
+/* Body */
+
+
+/* Principal */
+
+.section{
+	display: block;
+    width: 100%;
+    height: 750px;
+    background-color: #ADD8E6;
+    color: #000;
+}
+
+.section-dark{
+    background-color: #323232;
+    color: #fff;
+}
+
+.section-up{
+    width: 100%;
+    height: 70px;
+    border-bottom: rgba(255, 255, 255, 0.606) 1px solid;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.container-dark{
+    background-color: #212121;
+}
+
+.div-img{
+    width: 40%;
+    display: inline-block;
+}
+
+.perfil-icon{
+	width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+.button-perfil-icon{
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: none;
+    outline: none;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    background-color: rgb(114, 188, 233);
+    font-size: 14px;
+    border-radius: 20px;
+    opacity: 95%;
+}
+
+.button-perfil-icon:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.div-left{
+    width: 40%;
+    display: inline-block;
+    justify-content: center;
+    /* padding-left: 10%; */
+}
+
+.div-right{
+    width: 40%;
+    display: inline-block;
+    justify-content: center;
+}
+
+label{
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-weight: bold;
+}
+
+input{
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+input[type="text"]{
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    width: 35px;
+    margin: 0;
+}
+
+.label-doctor{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.803);
+    width: 45%;
+    padding-bottom: 7px;
+}
+
+.div-doctor{
+    display: none;
+    width: 25%;
+}
+
+.label-cancer{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.select-cancer{
+    border-radius: 30px;
+    background-color: #393B44;
+    color: #fff;
+    width: 50%;
+    height: 30px;
+    font-size: 16px;
+}
+
+.select-cancer option{
+    border-radius: 30px;
+}
+
+input[type="submit"]{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background-color: rgb(114, 188, 233);
+    font-size: 18px;
+    border-radius: 20px;
+    opacity: 95%;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+
+/* Principal */
+
+
+/* Footer */
+
+footer{
+	background-color: #ADD8E6;
+	width: 100%;
+	height: 60px;
+	margin-top: 5px;
+}
+
+footer ul{
+	text-align-last: center;
+	display: flex;
+	justify-content: space-around;
+}
+
+footer ul li{
+	padding-top: 20px;
+	display: flex;
+}
+
+footer ul li a{
+	font-size: 14px;
+	display: inline-block;
+	padding-left: 3px;
+}
+
+.footer-icon{
+	width: 20px;
+}
+
+.footer-dark{
+	background-color: #323232;
+}
+
+.footer-a-dark > * a{
+	color: darkgray;
+}
+
+.footer-a-dark > * a:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* Footer */

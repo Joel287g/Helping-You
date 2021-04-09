@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="imagenes/Icono.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Bootstrap.css">
+    <link rel="stylesheet" href="css/Editar perfil.css">
+
+    <title>Editar perfil</title>
+</head>
+
+<body id="body">
+
+    <!-- Nav bar -->
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a href="index.html"><img src="imagenes/Logo1.png" alt="Logo de Helping You" id="light-mode"
+                    class="light-mode visible"></a>
+            <a href="index.html"><img src="imagenes/Logo2.png" alt="Logo de Helping You" id="dark-mode"
+                    class="dark-mode invisible"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item d-block">
+                        <a class="nav-link nav-a" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item d-block">
+                        <a class="nav-link nav-a" href="#">Doctores</a>
+                    </li>
+                    <li class="nav-item dropdown d-block">
+                        <a class="nav-link nav-a dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Perfil</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Perfil.html">Volver al perfil</a></li>
+                            <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="d-flex">
+                    <a href="#" class="icon-mode" onclick="cambiarModo(), cambiarImagen()"><img
+                            src="imagenes/Sun-Moon.png"></a>
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success activo" type="submit" id="button">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nav bar -->
+
+    <!-- Section left -->
+
+    <section class="section" id="section">
+
+        <div class="section-up">
+            <h6>Información personal</h6>
+        </div>
+
+        <div class="contenedor" id="container">
+
+            <div class="div-img" id="div-img">
+                <img src="imagenes/Perfil.png" class="perfil-icon"> <br>
+                <button class="button-perfil-icon">Cambiar foto</button>
+                <!-- <button class="button-perfil-icon">Tomar foto</button> -->
+            </div>
+
+            <div class="div-left" id="div-left">
+                
+                <!-- Nombre -->
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Ingrese su nombre">
+
+                <!-- Apellido -->
+                <label for="apellido">Apellido</label>
+                <input type="text" placeholder="Ingrese su apellido">
+
+                <!-- Usuario -->
+                <label for="usuario">Usuario</label>
+                <input type="text" placeholder="Ingrese un nombre de usuario">
+
+                <!-- Correo electronico -->
+                <label for="correo">Correo electronico</label>
+                <input type="text" placeholder="Ingrese su correo electronico">
+            </div>
+                
+    <!-- Section right -->
+
+            <div class="div-right" id="div-right">
+                <!-- Número de telefono -->
+                <label for="numero">Número de telefono</label>
+                <input type="text" placeholder="Ingrese su número de telefono">
+
+                <!-- Gofundme -->
+                <label for="gofundme">Gofundme</label>
+                <input type="text" placeholder="Ingrese su enlace Gofundme">
+
+                <!-- Doctor -->
+                <label class="label-doctor" id="label-doctor">¿Usted es doctor?<input type="checkbox" id="checkbox" onclick="mostrarContenido()"></label>
+
+                <!-- Tipo de cáncer -->
+                <label for="cancer" class="label-cancer">Tipo de cáncer</label>
+                <select class="select-cancer">
+                    <option>Cáncer de Mama</option>
+                    <option>Cáncer de Higado</option>
+                    <option>Cáncer de Pulmón</option>
+                    <option>Cáncer de Piel</option>
+                    <option>Cáncer de Próstata</option>
+                </select>
+
+                <!-- Botón -->
+                <input type="submit" value="Modificar" class="visible" id="button-modificar">
+
+            </div>
+
+            <div class="div-doctor" id="div-doctor">
+                <!-- Especialidad -->
+                <label for="especialidad">Especialidad</label>
+                <input type="text" placeholder="Ingrese su especialidad">
+
+                <!-- Cargo -->
+                <label for="cargo">Cargo</label>
+                <input type="text" placeholder="Ingrese su cargo">
+
+                <!-- Dirección de consultorio -->
+                <label for="direccion">Dirección</label>
+                <input type="text" placeholder="Ingrese la dirección de su consultorio">
+
+                <!-- Botón -->
+                <input type="submit" value="Modificar">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+        <ul id="dark-a-footer">
+            <li>
+                <img src="imagenes/Facebook.png" alt="Logo de Facebook" class="footer-icon">
+                <a href="https://www.facebook.com/JoelGuerrero285" target="_blank">Facebook</a>
+            </li>
+            <li>
+                <img src="imagenes/Instagram.png" alt="Logo de Instagram" class="footer-icon">
+                <a href="https://www.instagram.com/joel_guerrero28/?hl=es" target="_blank">Instagram</a>
+            </li>
+            <li>
+                <img src="imagenes/Gmail.png" alt="Logo de Gmail" class="footer-icon">
+                <a href="mailto:joelguerrero287@gmail.com" target="_blank">Gmail</a>
+            </li>
+            <li>
+                <img src="imagenes/Linkedin.png" alt="Logo de Linkdin" class="footer-icon">
+                <a href="https://www.linkedin.com/in/joel-guerrero-9570b91ab/" target="_blank">Linkdin</a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="js/My JQuery.js"></script>
+
+    <!-- Footer -->
+
+</body>
+
+</html>
